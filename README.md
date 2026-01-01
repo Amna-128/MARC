@@ -1,3 +1,4 @@
+
 # MACL: Multi-Label Adaptive Contrastive Learning for Remote Sensing Image Retrieval
 
 This repository contains the implementation of MACL (Multi-Label Adaptive Contrastive Learning), 
@@ -90,6 +91,5 @@ Improvements are especially visible on rare classes and challenging retrieval ca
 ### Install dependencies
 ```bash
 pip install -r requirements.txt
-
 
 
