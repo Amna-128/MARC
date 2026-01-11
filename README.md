@@ -1,14 +1,14 @@
-# MACL: Multi-Label Adaptive Contrastive Learning for Remote Sensing Image Retrieval
+# MARC: Multi-Label Adaptive Retrieval Contrastive Loss for Remote Sensing Images
 
-This repository contains the implementation of MACL (Multi-Label Adaptive Contrastive Learning), 
+This repository contains the implementation of MARC (Multi-Label Adaptive Retrieval Contrastive Loss), 
 a contrastive learning loss designed for multi-label remote sensing image retrieval.
 
-MACL addresses challenges such as semantic overlap, class imbalance, and complex label co-occurrence 
+MARC addresses challenges such as semantic overlap, class imbalance, and complex label co-occurrence 
 by adaptively weighting sample pairs and dynamically adjusting the similarity temperature.
 
 
 
-## Why MACL
+## Why MARC
 
 Remote sensing images commonly contain multiple land-cover labels.  
 Most contrastive learning methods assume single-label images or treat all positive pairs equally.  
@@ -18,7 +18,7 @@ This creates three problems:
 2. Rare but important classes contribute very little.
 3. Different levels of semantic overlap are ignored.
 
-MACL introduces mechanisms that explicitly handle these challenges.
+MARC introduces mechanisms that explicitly handle these challenges.
 
 Pairwise Label Reweighting (PLR):
 Rare and informative label co-occurrences receive stronger learning influence.
@@ -45,7 +45,7 @@ This produces more meaningful separations in the embedding space and improves re
 
 ## Datasets
 
-MACL is evaluated on three multi-label remote sensing datasets:
+MARC is evaluated on three multi-label remote sensing datasets:
 
 - **DLRSD** — high-resolution urban & natural scenes  
 - **ML-AID** — multi-label version of AID  
@@ -86,7 +86,7 @@ datasets
 
 ## Results (Summary)
 
-MACL and its weighted variant improve performance across evaluation metrics such as 
+MARC and its weighted variant improve performance across evaluation metrics such as 
 mean Average Precision, normalized Discounted Cumulative Gain, and weighted Average Precision.
 
 Improvements are especially visible on rare classes and challenging retrieval cases.
